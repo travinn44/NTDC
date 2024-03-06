@@ -1,118 +1,109 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #00ffff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header img {
-    height: 100px;
-    margin-right: 20px;
-}
-
-header h1 {
-    margin: 0;
-    text-align: left;
-}
-
-.top-right-links {
-    margin-left: auto;
-}
-
-.top-right-links a {
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-nav {
-    text-align: center;
-    background-color: #f4f4f4;
+    background: rgb(0, 255, 128);
+    color: rgb(61, 61, 61);
     padding: 10px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
+header p {
+    font-size: 16px;
 }
 
-/* Adjusted CSS to move "HOME" link to the left */
-nav a[href="#earn-your-degree"] {
-    margin-right: auto;
-    margin-left: 20px;
+.survey {
+    width: 80%;
+    margin: 20 auto;
+    background: #4169E1;
+    color: #fff;
+    height: 200px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 7px #000;
 }
 
-button.full-width {
-    width: 100%;
+.survey h3 {
+    margin: 8px;
+    padding-top: 10px;
+}
+
+.survey li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.survey li:hover {
+    background: #6495ed;
+    width: 150px;
+    margin: 0 auto;
+    padding: 4px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.end {
+    background: #4169E1;
+    color: #fff;
+    width: 80%;
+    margin: 35% auto;
+    padding: 20px 0;
+    border-radius: 3px;
+    box-shadow: 1px 1px 7px #000;
+}
+
+.end h1 {
+    margin: 5px;
+}
+
+.end p {
+    padding: 10px;
+}
+
+.end a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    background: rgb(61, 61, 61);
+
+    outline: none;
+}
+
+.end a:hover{
+    box-shadow: 1px 1px 7px #000;
+    transition: 0.3s;    
+}
+
+.q1 {
     display: block;
 }
 
-.section-button {
-    width: 50;
+.q2 {
+    display: none;
 }
 
-section {
-    padding: 50px 20px;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px; /* Optional: Set a max-width for the sections */
+.q3 {
+    display: none;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-#earn-your-degree {
-    background-image: url('grad1.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
-    background-size: cover;
-    background-position: center;
-    color: transparent; /* Hide the text */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-#earn-your-degree h2, #earn-your-degree p {
-    color: #fff; /* Set text color to white */
-
-}
-
-#explore-programs {
-    background-image: url('explore.jpeg'); /* Replace 'your-image-url.jpg' with the URL of your image */
-    background-size: cover;
-    background-position: center;
-    color: transparent; /* Hide the text */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-#explore-programs h2, #explore-programs p {
-    color: #fff; /* Set text color to white */
-
-}
-#decide-on-your-future {
-    background-image: url('12_finland.jpg'); /* Replace 'your-image-url.jpg' with the URL of your image */
-    background-size: cover;
-    background-position: center;
-    color: transparent; /* Hide the text */
-    border: none; /* Remove button border */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-#decide-on-your-future h2, #decide-on-your-future p {
-    color: #fff; /* Set text color to white */
-
-}
-
-
+.end {
+    display: none;
+} 
