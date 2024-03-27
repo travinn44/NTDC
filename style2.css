@@ -42,7 +42,18 @@ nav {
     background-color: #f4f4f4;
     padding: 10px;
 }
+header a{
+    background-color: #333;
+    color: #fff;
 
+
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
 nav a {
     text-decoration: none;
     color: #333;

@@ -17,7 +17,12 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+header a{
+    background-color: #333;
+    color: #fff;
 
+
+}
 .top-right-links {
     margin-left: auto;
 }
