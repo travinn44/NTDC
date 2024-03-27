@@ -24,6 +24,10 @@ header h1 {
     text-align: left;
 }
 
+li {
+    display: inline;
+  }
+
 .top-right-links {
     margin-left: auto;
 }

@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("cap.png");
+    background-repeat: no-repeat;
+    background-position-y:center ;
+    background: size 1182px; 
 }
 
 header {
@@ -14,16 +18,6 @@ header {
     justify-content: space-between;
 }
 
-header img {
-    height: 100px;
-    margin-right: 20px;
-}
-
-header h1 {
-    margin: 0;
-    text-align: left;
-}
-
 .top-right-links {
     margin-left: auto;
 }
@@ -32,7 +26,9 @@ header h1 {
     display: inline-block;
     margin-bottom: 10px;
 }
-
+nav li{
+    display: inline;
+}
 nav {
     text-align: center;
     background-color: #f4f4f4;
@@ -45,20 +41,7 @@ nav a {
     padding: 10px 20px;
 }
 
-/* Adjusted CSS to move "HOME" link to the left */
-nav a[href="#earn-your-degree"] {
-    margin-right: auto;
-    margin-left: 20px;
-}
 
-button.full-width {
-    width: 100%;
-    display: block;
-}
-
-.section-button {
-    width: 50;
-}
 
 section {
     padding: 50px 20px;
