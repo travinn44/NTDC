@@ -7,19 +7,57 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <head> 
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          const input = document.getElementById("myInput");
+          const filter = input.value.toUpperCase();
+          const div = document.getElementById("myDropdown");
+          const a = div.getElementsByTagName("a");
+          for (let i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+    <header> 
         <h1> North Texas Degree Center</h1>
 
-    </head>
+    </header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="https://my.unt.edu/psp/ps/?cmd=login&languageCd=ENG&">Academics</a></li>
             <li><a href="https://www.unt.edu/admissions/index.html">Admissions</a></li>
             <li><a href="https://www.unt.edu/student-life.html">Student Life</a></li>
-        </ul>
-        
+        </ul>    
     </nav>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Quick Nav</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="education.html">College of Education</a>
+          <a href="Engineering.html">College of Engineering</a>
+          <a href="health.html">College of Health and Public Servicess</a>
+          <a href="information.html">College of Information</a>
+          <a href="liberal Arts.html">College of Liberal Arts and Social Sciences</a>
+          <a href="merchandising.html">College of Mechandising, Hospitatility and Tourism</a>
+          <a href="music.html">College of Music</a>
+          <a href="science.html">College of Science</a>
+          <a href="journalism.html">Mayborn School of Journalism</a>
+          <a href="Business.html">G Brint Ryan College of Business</a>
+        </div>
+      </div>
+
     <h2>Degree Programs Offered:</h2>
     <p>The lists Below include undergraduate and graduate degree programs within each college.</p>
 
@@ -61,8 +99,16 @@
         <h4> <a href="Business.html"><u><strong>G Brint Ryan College of Business</strong></u></a> </h4>
 
     </section>
-    <footer>
-        <p>&copy; 2024 Informational Website. All rights reserved.</p>
-    </footer>
+    <footer class="footer">
+        <div class="main-heading">North Texas</div>
+        <div class="sub-heading">Degree Center</div>
+        <img src= "https://static.thenounproject.com/png/5050730-200.png" alt="Eagle" class="eagle-icon">
+        <p>(817)-123-4567</p>
+        <p>NTDC@campusmail.com</p>
+        <p>University of North Texas Discovery Park,</p>
+        <p>3950 N Elm St,Denton,TX 76207</p>
+        <p>&copy; 2024 My Website</p>
+      </footer>
+      
 </body> 
 </html>
