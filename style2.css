@@ -5,6 +5,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+
 }
 
 head {
@@ -129,11 +131,11 @@ main{
     padding: 20px; /* Add some padding */
     text-align: center; /* Center align text */
     position: absolute; /* Fixed position */
-    bottom: 100%; /* Stick to the bottom */
+    bottom: 0; /* Stick to the bottom */
     width: 100%; /* Full width */
     height: 20%;
     top: 100%; 
-    margin-top: 500px; /* negative value of footer height */
+    margin-bottom: 500px; /* negative value of footer height */
     height: 150px;
     clear:both;
     left: 0; 

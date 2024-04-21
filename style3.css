@@ -189,7 +189,7 @@ button{
   bottom: 0; /* Stick to the bottom */
   width: 100%; /* Full width */
   height: 20%; 
-  margin-bottom: -800px; /* negative value of footer height */
+  margin-bottom: -400px; /* negative value of footer height */
   height: 150px;
   clear:both;
   left: 0; 
@@ -285,4 +285,13 @@ font-size: 22px; /* Adjust font size as needed */
   border-style: hidden;
   outline: none;
   width: auto; /* Allow the width to be determined by content */
+}
+#container {
+    
+}
+
+#nested {
+  height: 300px;   
+  overflow-y: scroll;
+  border: 1px solid #008000;
 }
