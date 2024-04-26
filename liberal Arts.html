@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of Liberal Arts and Social Sciences</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        function filterFunction() {
+          const input = document.getElementById("myInput");
+          const filter = input.value.toUpperCase();
+          const div = document.getElementById("myDropdown");
+          const a = div.getElementsByTagName("a");
+          for (let i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+    <head> 
+        <h1> College of Liberal Arts and Social Sciences </h1>
+    </head>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://my.unt.edu/psp/ps/?cmd=login&languageCd=ENG&">Academics</a></li>
+            <li><a href="https://www.unt.edu/admissions/index.html">Admissions</a></li>
+            <li><a href="https://www.unt.edu/student-life.html">Student Life</a></li>
+        </ul>
+    </nav>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Quick Nav</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="education.html">College of Education</a>
+          <a href="Engineering.html">College of Engineering</a>
+          <a href="health.html">College of Health and Public Servicess</a>
+          <a href="information.html">College of Information</a>
+          <a href="liberal Arts.html">College of Liberal Arts and Social Sciences</a>
+          <a href="merchandising.html">College of Mechandising, Hospitatility and Tourism</a>
+          <a href="music.html">College of Music</a>
+          <a href="science.html">College of Science</a>
+          <a href="journalism.html">Mayborn School of Journalism</a>
+          <a href="Business.html">G Brint Ryan College of Business</a>
+        </div>
+      </div>
+      <div class="back">
+        <a href="catalog.html" class="previous">&laquo;Back</a>
+    </div>
+    <main> 
+            <h2> Majors </h2>
+            <div id='nested'>
+            <ul>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/arabic">Arabic</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/chinese">Chinese</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/french">French </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/german">German</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/italian">Italian</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/japanese">Japanese</a></li>
+                <li><a href="https://techcomm.unt.edu/undergraduate">Professional Communication</a></li>
+                <li><a href="https://techcomm.unt.edu/undergraduate">Technical Communication</a></li>
+                <li><a href="https://sociology.unt.edu/undergraduate">Sociology</a></li>
+                <li><a href="https://psychology.unt.edu/undergraduate-program/degree-requirements">Psychology</a></li>
+                <li><a href="https://politicalscience.unt.edu/undergraduate">Poli Sci</a></li>
+                <li><a href="https://philosophy.unt.edu/philosophy/philosophy-major">Philosophy </a></li>
+                <li><a href="http://mediaarts.unt.edu/undergraduate-studies/degrees-media-arts/radio-television-and-film">Media Arts</a></li>
+                <li><a href="http://mediaarts.unt.edu/undergraduate-studies/converged-broadcast-media">Converged Broadcast Media</a></li>
+                <li><a href="https://integrativestudies.unt.edu/about-integrative-studies">Integrative Studies</a></li>
+                <li><a href="https://history.unt.edu/undergraduate-program">History</a></li>
+                <li><a href="https://geography.unt.edu/academic-programs/undergraduate-program">Geology</a></li>
+                <li><a href="https://geography.unt.edu/bachelors-science-gis-cs#">GIS+CS</a></li>
+                <li><a href="https://english.unt.edu/undergraduate">English</a></li>
+                <li><a href="https://economics.unt.edu/undergraduate">Economics</a></li>
+                <li><a href="https://danceandtheatre.unt.edu/theatre">Theatre</a></li>
+                <li><a href="https://communication.unt.edu/undergraduate-program">Communication Arts </a></li>
+                <li><a href="https://anthropology.unt.edu/undergraduate-overview">Anthropology </a></li>
+
+            </ul>
+          </div>
+            <h2>Minors</h2>
+            <div id='nested'>
+            <ul>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/arabic">Arabic</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate/asian-studies-minor">Asian Studies </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/chinese">Chinese </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/french">French </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/german">German </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/italian">Italian </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/latin">Latin</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/japanese">Japanese</a></li>
+                <li><a href="http://catalog.unt.edu/preview_program.php?catoid=30&poid=12951">Technical Communication</a></li>
+                <li><a href="https://sociology.unt.edu/undergraduate/degrees-programs/minor-sociology">Sociology</a></li>
+                <li><a href="https://psychology.unt.edu/undergraduate-program/degree-requirements">Psychology</a></li>
+                <li><a href="https://philosophy.unt.edu/philosophy/philosophy-major">Philosophy </a></li>
+                <li><a href="https://philosophy.unt.edu/religion/religion-major">Religon</a></li>
+                <li><a href="http://history.unt.edu/interdisciplinary-minors/african-american-studies">Africana Studies</a></li>
+                <li><a href="http://history.unt.edu/interdisciplinary-minors/classical-studies">Classical Studies</a></li>
+                <li><a href="http://history.unt.edu/interdisciplinary-minors/mexican-american-studies">Mexican American Studies</a></li>
+                <li><a href="https://geography.unt.edu/degrees-certificates/undergraduate-programs/minors">Geography </a></li>
+                <li><a href="https://geography.unt.edu/degrees-certificates/undergraduate-programs/minors">Geology</a></li>
+                <li><a href="https://english.unt.edu/undergraduate/description-minor">English</a></li>
+                <li><a href="https://danceandtheatre.unt.edu/dance">Dance</a></li>
+                <li><a href="https://communication.unt.edu/undergraduate/communication-studies-minorcertificates">Communication Arts </a></li>
+                <li><a href="https://anthropology.unt.edu/undergraduate/minors-certificates">Anthropology </a></li>
+
+            </ul>
+          </div>
+            <h2>Masters</h2>
+            <div id='nested'>
+            <ul>
+                <li><a href="https://techcomm.unt.edu/grad-ma">Technical Communication</a></li>
+                <li><a href="https://techcomm.unt.edu/grad-ma">Professional Communication </a></li>
+                <li><a href="https://spanish.unt.edu/spanish-masters-program">Spanish </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/french">French </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/german">German </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/italian">Italian </a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/latin">Latin</a></li>
+                <li><a href="https://worldlanguages.unt.edu/undergraduate-programs/japanese">Japanese</a></li>
+                <li><a href="http://catalog.unt.edu/preview_program.php?catoid=30&poid=12951">Technical Communication</a></li>
+                <li><a href="https://sociology.unt.edu/graduate/graduate-program-overview">Sociology</a></li>
+                <li><a href="https://psychology.unt.edu/graduate-programs/behavioral-science">Behavioral Science</a></li>
+                <li><a href="https://psychology.unt.edu/graduate-programs/clinical-psychology">Clinical Psychology</a></li>
+                <li><a href="https://psychology.unt.edu/graduate-programs/counseling-psychology">Counseling Psychology</a></li>
+                <li><a href="https://mediaarts.unt.edu/graduate-studies/critical-studies">Critical-Cultural Studies </a></li>
+                <li><a href="https://mediaarts.unt.edu/graduate-studies/industry-studies">Industry Studies</a></li>
+                <li><a href="https://history.unt.edu/graduate-program-overview">History</a></li>
+                <li><a href="https://geography.unt.edu/academic-programs/graduate-program">Geography</a></li>
+                <li><a href="https://english.unt.edu/graduate">Literature</a></li>
+                <li><a href="https://english.unt.edu/graduate">Creative Writing</a></li>
+                <li><a href="https://economics.unt.edu/master-science-economics">Economics</a></li>
+                <li><a href="https://communication.unt.edu/graduate-studies-overview"> Communication Studies</a></li>
+                <li><a href="https://anthropology.unt.edu/graduate-programs-overview">Anthropology </a></li>
+            </ul>
+          </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="main-heading">North Texas</div>
+        <div class="sub-heading">Degree Center</div>
+        <img src= "https://static.thenounproject.com/png/5050730-200.png" alt="Eagle" class="eagle-icon">
+        <p>(817)-123-4567</p>
+        <p>NTDC@campusmail.com</p>
+        <p>University of North Texas Discovery Park,</p>
+        <p>3950 N Elm St,Denton,TX 76207</p>
+        <p>&copy; 2024 My Website</p>
+      </footer>
+</body> 
+</html>

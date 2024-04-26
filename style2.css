@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+head {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+h1 {
+    background-color: #333;
+    color:#ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    left: 0px;
+    top: 40px; /* Adjust distance from the top */
+    font-weight: bold;
+    background-color: #008000; 
+    color: rgb(9, 9, 9); 
+    padding: 10px 5px; 
+   
+}
+nav ul li {
+    display: inline; /* Display the list items horizontally */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+main{
+    background-image: url('istockphoto-891698738-612x612 1.png');
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #008000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    right: 80px;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    float: right;
+    right: 0px;
+    top: 50px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+ .footer {
+    background-color: #909090; 
+    color: rgb(9, 9, 9); /* Text color */
+    padding: 20px; /* Add some padding */
+    text-align: center; 
+    position:relative;/* Center align text */ /* Fixed position */
+    bottom: 0; /* Stick to the bottom */
+    width: 100vw; /* Full width */
+    display: block;
+    overflow: hidden;
+   clear:both
+  }
+  .footer p {
+    position: relative; /* Change position to relative */
+    bottom: 80px; /* Adjust the position up by 10 pixels */
+  }
+  /* Styling for the eagle icon */
+  .eagle-icon {
+    position: absolute;
+    width: 20%;
+    height: 25%;
+    left: -35px;
+    top: 0px;
+  }
+  .main-heading {
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: left; /* Align the text to the left */
+    margin-left: 160px; 
+    font-weight: bold;
+  }
+  
+  .sub-heading {
+    font-size: 30px;
+    text-align: left; /* Align the text to the left */
+    margin-left: 160px; 
+    font-weight: bold;
+  }
+  .rectangle14
+  {
+  position:fixed;
+  bottom: 125px;
+  background-color:#008000;
+  height:53.562984466552734px;
+  width:100%;
+  }
+  
+  .rectangle9
+  {
+  position:absolute;
+  background-color:#909090;
+  height:37.302791595458984px;
+  width:100%;
+  text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox for vertical alignment */
+    justify-content: space-evenly; /* Evenly space the items */
+    align-items: center; /* Center items vertically */
+  }
+  .home
+  {
+  color:#000000;
+  font-size: 22px; /* Adjust font size as needed */
+    font-family: Inter;
+    font-weight: bold; /* Make the text bold */
+    line-height: auto;
+    border-style: hidden;
+    outline: none;
+    width: auto; /* Allow the width to be determined by content */
+  }
+  .academics
+  {
+  color:#000000;
+  font-size: 22px; /* Adjust font size as needed */
+    font-family: Inter;
+    font-weight: bold; /* Make the text bold */
+    line-height: auto;
+    border-style: hidden;
+    outline: none;
+    width: auto; /* Allow the width to be determined by content */
+  }
+  .admissions
+  {
+  color:#000000;
+  font-size: 22px; /* Adjust font size as needed */
+    font-family: Inter;
+    font-weight: bold; /* Make the text bold */
+    line-height: auto;
+    border-style: hidden;
+    outline: none;
+    width: auto; /* Allow the width to be determined by content */
+  }
+  .studentlife
+  {
+  color:#000000;
+  font-size: 22px; /* Adjust font size as needed */
+    font-family: Inter;
+    font-weight: bold; /* Make the text bold */
+    line-height: auto;
+    border-style: hidden;
+    outline: none;
+    width: auto; /* Allow the width to be determined by content */
+  }
